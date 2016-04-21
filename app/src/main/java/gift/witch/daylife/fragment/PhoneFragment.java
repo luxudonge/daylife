@@ -1,4 +1,4 @@
-package daylife.sbnnest.com.daylife.fragment;
+package gift.witch.daylife.fragment;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -19,19 +19,17 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-import daylife.sbnnest.com.daylife.R;
-import daylife.sbnnest.com.daylife.data.PhoneResponse;
-import daylife.sbnnest.com.daylife.data.TestC;
+import gift.witch.daylife.R;
+import gift.witch.daylife.data.PhoneResponse;
+import gift.witch.daylife.data.TestC;
+
 
 /**
  * A simple {@link Fragment} subclass.

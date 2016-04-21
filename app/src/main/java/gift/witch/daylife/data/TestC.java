@@ -1,4 +1,4 @@
-package daylife.sbnnest.com.daylife.data;
+package gift.witch.daylife.data;
 
 /**
  * Created by xiaosi on 15/10/12.

@@ -1,4 +1,4 @@
-package daylife.sbnnest.com.daylife.fragment;
+package gift.witch.daylife.fragment;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import daylife.sbnnest.com.daylife.R;
+import gift.witch.daylife.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
