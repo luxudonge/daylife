@@ -1,4 +1,4 @@
-package daylife.sbnnest.com.daylife;
+package gift.witch.daylife.activity;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -6,19 +6,15 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
+import gift.witch.daylife.fragment.NavigationDrawerFragment;
 import daylife.sbnnest.com.daylife.fragment.IdentityCardFragment;
 import daylife.sbnnest.com.daylife.fragment.PhoneFragment;
 import daylife.sbnnest.com.daylife.fragment.WeatherFragment;
@@ -43,16 +39,16 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(daylife.sbnnest.com.daylife.R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
-                getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+                getSupportFragmentManager().findFragmentById(daylife.sbnnest.com.daylife.R.id.navigation_drawer);
         mTitle = getTitle();
 
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
-                R.id.navigation_drawer,
-                (DrawerLayout) findViewById(R.id.drawer_layout));
+                daylife.sbnnest.com.daylife.R.id.navigation_drawer,
+                (DrawerLayout) findViewById(daylife.sbnnest.com.daylife.R.id.drawer_layout));
     }
 
     @Override
@@ -62,19 +58,19 @@ public class MainActivity extends ActionBarActivity
             WeatherFragment weather = WeatherFragment.newInstance(" ","2");
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, weather)
+                    .replace(daylife.sbnnest.com.daylife.R.id.container, weather)
                     .commit();
         }else if (position == 1){
             IdentityCardFragment weather = IdentityCardFragment.newInstance(" ","2");
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, weather)
+                    .replace(daylife.sbnnest.com.daylife.R.id.container, weather)
                     .commit();
         }else if (position == 2){
             PhoneFragment weather = PhoneFragment.newInstance(" ","2");
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, weather)
+                    .replace(daylife.sbnnest.com.daylife.R.id.container, weather)
                     .commit();
         }
 
@@ -83,13 +79,13 @@ public class MainActivity extends ActionBarActivity
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.nav_weather);
+                mTitle = getString(daylife.sbnnest.com.daylife.R.string.nav_weather);
                 break;
             case 2:
-                mTitle = getString(R.string.nav_identity_card);
+                mTitle = getString(daylife.sbnnest.com.daylife.R.string.nav_identity_card);
                 break;
             case 3:
-                mTitle = getString(R.string.nav_phone);
+                mTitle = getString(daylife.sbnnest.com.daylife.R.string.nav_phone);
                 break;
         }
     }
@@ -123,7 +119,7 @@ public class MainActivity extends ActionBarActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == daylife.sbnnest.com.daylife.R.id.action_settings) {
             return true;
         }
 
@@ -163,7 +159,7 @@ public class MainActivity extends ActionBarActivity
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            View rootView = inflater.inflate(daylife.sbnnest.com.daylife.R.layout.fragment_main, container, false);
             return rootView;
         }
 
